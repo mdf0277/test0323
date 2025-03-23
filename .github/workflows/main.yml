@@ -3,10 +3,10 @@ on:
   push:
 jobs:
   build:
-    name: run python
+    name: run python build
     runs-on: ubuntu-latest
     steps:
-    - uses: action/checkout@v2
+    - uses: actions/checkout@v2
     - name: Run python
-      run:
+      run: |
         python3 a0323.py
